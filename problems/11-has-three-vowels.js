@@ -17,10 +17,19 @@ console.log(hasThreeVowels('go home'));         //  false
 */
 
 let hasThreeVowels = function(string) {
-    // Your code here 
-};
+    let vowels = ['a','e','i','o','u'];
 
-// Your code here 
+    let count = string.toLowerCase().split('').reduce((acc,char) => {
+        if(vowels.includes(char)){
+            acc[char] = (acc[char] || 0) + 1;
+        }
+        return acc;
+    }, {});
+    let uniqueVowels = Object.keys(count).length;
+
+    return uniqueVowels >= 3;
+
+};
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
