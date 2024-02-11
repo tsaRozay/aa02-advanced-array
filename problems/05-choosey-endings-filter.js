@@ -31,7 +31,7 @@ let chooseyEndings = function(words, suffix) {
 };
 
   return words.filter(function(word){
-    return word.endsWith(sufix)
+    return word.endsWith(suffix)
   });
 };
 

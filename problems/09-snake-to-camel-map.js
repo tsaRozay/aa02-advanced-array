@@ -23,7 +23,7 @@ function snakeToCamel(str) {
             return word.charAt(0).toUpperCase() + word.slice(1).toLowercase();
 
         }
-    })
+    }).join('')
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
